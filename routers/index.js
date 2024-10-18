@@ -1,3 +1,4 @@
+/* This file gathers all the other routers declared in the routers folder */
 import { Router } from 'express';
 import { router as pokemonRouter } from './pokemons.router.js';
 import { router as typeRouter } from './types.router.js'
