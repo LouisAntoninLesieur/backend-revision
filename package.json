@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:reset": "psql -U marclegoat -d marclegoat -f ./data/create_table.sql && psql -U marclegoat -d marclegoat -f ./data/seeding_tables.sql"
+    "db:reset": "psql -U marclegoat -d marclegoat -f ./data/create_table.sql && psql -U marclegoat -d marclegoat -f ./data/seeding_tables.sql",
+    "dev": "node --watch index.js"
   },
   "keywords": [],
   "author": "",
