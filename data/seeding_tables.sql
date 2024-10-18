@@ -23,11 +23,6 @@ VALUES
   ( 'Ténèbres', '665544'),
   ( 'Vol', '6699ff')
 ;
-INSERT INTO "team" 
-  ("id", "name", "description")
-VALUES
-(1,'Team_Marc','meilleur équipe')
-;
 
 INSERT INTO "pokemon" 
   ("id", "name", "hp", "atk", "def", "atk_spe", "def_spe", "speed")
