@@ -15,7 +15,11 @@ export async function getAllPokemons(req, res) {
 export async function getOnePokemon(req, res) {
 	const id = Number.parseInt(req.params.id);
 
-	const pokemon = await Pokemon.findByPk(id);
+	if (Number.isNaN(id)) {
+		res.status(400).json({ error: "The id must be a number. Please try again." });
+		return;
+	};
 
+	const pokemon = await Pokemon.findByPk(id);
 	res.json(pokemon);
 };
