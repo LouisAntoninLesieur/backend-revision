@@ -64,17 +64,17 @@ REVISION
 │   ├── mcd.drawio
 │   └── mld.drawio
 ├── src
-│   ├── controllers
+│   └── controllers
 │      ├── pokemon.controller.js
 │      └──type.controller.js
-│   ├── models
+│   └── models
 │      ├── association.js
 │      ├── index.js
 │      ├── pokemon.model.js
 │      ├── sequelize-client.js
 │      ├── test.js
 │      └── type.model.js
-│   ├── routers
+│   └── routers
 │      ├── controller-wrapper.js
 │      ├── index.js
 │      ├── pokemon.router.js
