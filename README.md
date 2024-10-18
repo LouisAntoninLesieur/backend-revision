@@ -59,26 +59,26 @@ Open a new browser tab. `Hello World !` should be displayed on screen.
 REVISION
 ├── data
 │   ├── create_table.sql
-│   ├── seeding_tables.sql
+│   └── seeding_tables.sql
 ├── docs
 │   ├── mcd.drawio
-│   ├── mld.drawio
+│   └── mld.drawio
 ├── src
 │   ├── controllers
 │      ├── pokemon.controller.js
-│      ├── type.controller.js
+│      └──type.controller.js
 │   ├── models
 │      ├── association.js
 │      ├── index.js
 │      ├── pokemon.model.js
 │      ├── sequelize-client.js
 │      ├── test.js
-│      ├── type.model.js
+│      └── type.model.js
 │   ├── routers
 │      ├── controller-wrapper.js
 │      ├── index.js
 │      ├── pokemon.router.js
-│      ├── type.router.js
+│      └── type.router.js
 ├── .env.example
 ├── .gitignore
 ├── index.htlm
