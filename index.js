@@ -1,14 +1,13 @@
 import 'dotenv/config'
-import express, { urlencoded } from 'express';
+import express from 'express';
+import { router } from './routers/router.js';
 
 const app = express();
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.get('/', (req, res) => {
-  res.send('<h1>Hello Marc le GOAT ?</h1>')
-});
+app.use(router)
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
