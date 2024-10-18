@@ -85,7 +85,7 @@ REVISION
 ├── index.js
 ├── package-lock.json
 ├── package.json
-├── README.md
+└── README.md
 ```
 
 ## 3 - Feel free to ask
