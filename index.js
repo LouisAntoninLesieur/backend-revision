@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import express from 'express';
-import { router as apiRouter } from './routers/index.js'
+import { router as apiRouter } from './src/routers/index.js'
 
 const app = express();
 
