@@ -1,5 +1,7 @@
 # BACKEND REVISION
 
+*This very basic API can be fetched and used with this very simple front application we created here : https://github.com/LouisAntoninLesieur/frontend-revision*
+
 ## 1 - Start an Express Server
 
 To start a new Express Sever, you MUST initialize your project with node and install express package.
