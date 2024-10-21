@@ -88,6 +88,14 @@ REVISION
 └── README.md
 ```
 
-## 3 - Feel free to ask
+## 3 - Feel free to practice !
+
+Having reviewed the code and the project, here are a few points of improvement that you can try to implement :
+
+- create a TEAM table in `create_tables` and seed it
+- make it possible to add (POST), update (PATCH), or delete (DELETE) TEAM(s)
+- make it possible to add (POST), update (PATCH), or delete (DELETE) POKEMON(s) in TEAM(s)
+
+## 4 - Feel free to ask
 
 Any question ? Request ? Feel free to ask me ! PR, Discord, Slack, you know how to reach me buddy ! 😁

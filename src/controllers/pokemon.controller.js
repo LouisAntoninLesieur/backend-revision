@@ -20,6 +20,12 @@ export async function getOnePokemon(req, res) {
 		return;
 	};
 
-	const pokemon = await Pokemon.findByPk(id);
+	const pokemon = await Pokemon.findByPk(id, {
+		include: {
+			model: Type,
+			as: "types",
+			attributes: ["name", "color"],
+		},
+	});
 	res.json(pokemon);
 };
