@@ -81,6 +81,8 @@ REVISION
 │      ├── index.js
 │      ├── pokemon.router.js
 │      └── type.router.js
+│   └── services
+│      └── pokemonService.js
 ├── .env.example
 ├── .gitignore
 ├── index.html
