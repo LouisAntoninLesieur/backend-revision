@@ -1,13 +1,7 @@
-import { Pokemon, Type } from "../models/index.js";
+import { fetchAllPokemons, fetchOnePokemon } from "../../services/pokemonService.js";
 
 export async function getAllPokemons(req, res) {
-	const pokemons = await Pokemon.findAll({
-		include: {
-			model: Type,
-			as: "types",
-			attributes: ["name", "color"],
-		},
-	});
+	const pokemons = await fetchAllPokemons();
 
 	res.json(pokemons);
 };
@@ -20,12 +14,6 @@ export async function getOnePokemon(req, res) {
 		return;
 	};
 
-	const pokemon = await Pokemon.findByPk(id, {
-		include: {
-			model: Type,
-			as: "types",
-			attributes: ["name", "color"],
-		},
-	});
+	const pokemon = await fetchOnePokemon(id);
 	res.json(pokemon);
 };
