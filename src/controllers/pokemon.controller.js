@@ -1,4 +1,4 @@
-import { fetchAllPokemons, fetchOnePokemon } from "../../services/pokemonService.js";
+import { fetchAllPokemons, fetchOnePokemon } from "../services/pokemonService.js";
 
 export async function getAllPokemons(req, res) {
 	const pokemons = await fetchAllPokemons();

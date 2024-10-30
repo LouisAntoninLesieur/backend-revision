@@ -1,7 +1,7 @@
-import { Type } from "../models/index.js";
+import { fetchAllTypes, fetchOnePokemon } from "../services/typeService.js";
 
 export async function getAllTypes(req, res) {
-  const types = await Type.findAll();
+  const types = await fetchAllTypes();
 
   res.json(types);
 };
@@ -14,6 +14,6 @@ export async function getOneType(req, res) {
     return;
   };
 
-  const type = await Type.findByPk(id);
+  const type = await fetchOnePokemon(id);
   res.json(type);
 };
